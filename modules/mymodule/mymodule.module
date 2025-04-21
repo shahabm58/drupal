@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains mymodule.module
+ */
+
+use Drupal\commerce_product\Entity\Product;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_theme().
+ */
+function mymodule_views_pre_view(ViewExecutable $view, $display_id, array &$args)
+{
+}
+
