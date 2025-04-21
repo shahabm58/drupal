@@ -1,5 +1,5 @@
 deployment:
   tasks:
-    - /bin/git pull origin develop
+    - /usr/local/cpanel/3rdparty/bin/git pull origin develop
     - /opt/cpanel/composer/bin/composer install --no-interaction --prefer-dist
-    - /bin/drush cr
+    - /bin/rsync -av --delete --exclude='.git' ./ /home/zerobiir/dev.zerobi.ir/
