@@ -1,17 +1,53 @@
 <?php
 
-/**
- * @file
- * Contains mymodule.module
- */
-
-use Drupal\commerce_product\Entity\Product;
-use Drupal\views\ViewExecutable;
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Implements hook_theme().
+ * Implements hook_menu().
  */
-function mymodule_views_pre_view(ViewExecutable $view, $display_id, array &$args)
-{
+function simple_form_menu() {
+  $items = array();
+
+  $items['simple-form'] = array(
+    'title' => 'Simple Form',
+    'page callback' => 'simple_form_page',
+    'page arguments' => array(),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
 }
 
+/**
+ * صفحه فرم.
+ */
+function simple_form_page() {
+  return drupal_get_form('simple_form_form');
+}
+
+/**
+ * تعریف فرم.
+ */
+function simple_form_form($form, FormStateInterface $form_state) {
+  $form['name'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Your Name'),
+    '#required' => TRUE,
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+
+  return $form;
+}
+
+/**
+ * عملکرد پس از ارسال فرم.
+ */
+function simple_form_form_submit($form, FormStateInterface $form_state) {
+  drupal_set_message(t('Hello, @name!', array('@name' => $form_state->getValue('name'))));
+}
