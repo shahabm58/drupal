@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - /bin/git pull origin develop
+    - /opt/cpanel/composer/bin/composer install --no-interaction --prefer-dist
+    - /bin/drush cr
