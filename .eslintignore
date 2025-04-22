@@ -1,4 +1,5 @@
-
+core/**/*
+vendor/**/*
 sites/**/files/**/*
 libraries/**/*
 sites/**/libraries/**/*
