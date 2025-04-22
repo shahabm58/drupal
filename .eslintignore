@@ -5,4 +5,5 @@ libraries/**/*
 sites/**/libraries/**/*
 profiles/**/libraries/**/*
 **/js_test_files/**/*
-**/node_modules/**/*
+
+
