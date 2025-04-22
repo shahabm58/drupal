@@ -1,7 +1,4 @@
 # Ignore core and vendor (managed by Composer)
-core/
-vendor/
-
 # Ignore Drupal file directories
 sites/*/files/
 sites/*/private/
