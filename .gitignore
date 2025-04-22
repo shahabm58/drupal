@@ -1,0 +1,32 @@
+# Ignore core and vendor (managed by Composer)
+core/
+vendor/
+
+# Ignore Drupal file directories
+sites/*/files/
+sites/*/private/
+sites/*/libraries/
+
+# Ignore custom modules/themes temp files
+**/*.log
+**/*.tmp
+**/*~
+**/.DS_Store
+
+# Ignore node_modules if you're using npm/yarn
+node_modules/
+
+# Ignore environment config files
+.env
+.env.local
+.env.*
+
+# Ignore IDE/editor folders
+.idea/
+.vscode/
+
+# Ignore composer lock if you want fresh installs (optional)
+# composer.lock
+
+# Ignore deployment config if needed
+.cpanel/*
