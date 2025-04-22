@@ -2,8 +2,6 @@
 core/
 vendor/
 
-.gitignore
-
 # Ignore Drupal file directories
 sites/*/files/
 sites/*/private/
