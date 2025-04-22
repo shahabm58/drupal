@@ -36,6 +36,12 @@ function simple_form_form($form, FormStateInterface $form_state) {
     '#title' => t('Your Name'),
     '#required' => TRUE,
   );
+  $form['name1'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Your Name1'),
+    '#required' => TRUE,
+  );
+
 
   $form['submit'] = array(
     '#type' => 'submit',
