@@ -25,6 +25,7 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
         'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/core/includes/bootstrap.inc',
+        '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -34,6 +35,7 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php84\\' => 23,
             'Symfony\\Polyfill\\Php83\\' => 23,
             'Symfony\\Polyfill\\Php81\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -91,6 +93,7 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         ),
         'D' => 
         array (
+            'Drupal\\rat\\' => 11,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\VendorHardening\\' => 39,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
@@ -98,12 +101,15 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
             'Drupal\\Component\\' => 17,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Annotations\\' => 28,
         ),
         'C' => 
         array (
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
+            'CommerceGuys\\Intl\\' => 18,
+            'CommerceGuys\\Addressing\\' => 24,
         ),
         'A' => 
         array (
@@ -115,6 +121,10 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Php84\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php84',
         ),
         'Symfony\\Polyfill\\Php83\\' => 
         array (
@@ -285,6 +295,10 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
         ),
+        'Drupal\\rat\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal/rat/src',
+        ),
         'Drupal\\Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Core',
@@ -313,6 +327,10 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/src',
         ),
+        'Doctrine\\Common\\Collections\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/collections/src',
+        ),
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
@@ -324,6 +342,14 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
+        'CommerceGuys\\Intl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/commerceguys/intl/src',
+        ),
+        'CommerceGuys\\Addressing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/commerceguys/addressing/src',
         ),
         'Asm89\\Stack\\' => 
         array (
@@ -360,6 +386,7 @@ class ComposerStaticInitb689c524c3efaf794914c6ee9e1bddfb
         'DateMalformedStringException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateMalformedStringException.php',
         'DateObjectError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateObjectError.php',
         'DateRangeError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateRangeError.php',
+        'Deprecated' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Deprecated.php',
         'Drupal' => __DIR__ . '/../..' . '/core/lib/Drupal.php',
         'Drupal\\Component\\Datetime\\Time' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Datetime/Time.php',
         'Drupal\\Component\\DependencyInjection\\Container' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/DependencyInjection/Container.php',

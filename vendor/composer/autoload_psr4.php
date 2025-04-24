@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
+    'Symfony\\Polyfill\\Php84\\' => array($vendorDir . '/symfony/polyfill-php84'),
     'Symfony\\Polyfill\\Php83\\' => array($vendorDir . '/symfony/polyfill-php83'),
     'Symfony\\Polyfill\\Php81\\' => array($vendorDir . '/symfony/polyfill-php81'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
@@ -49,6 +50,7 @@ return array(
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
+    'Drupal\\rat\\' => array($vendorDir . '/drupal/rat/src'),
     'Drupal\\Core\\' => array($baseDir . '/core/lib/Drupal/Core'),
     'Drupal\\Composer\\Plugin\\VendorHardening\\' => array($vendorDir . '/drupal/core-vendor-hardening'),
     'Drupal\\Composer\\Plugin\\Scaffold\\' => array($vendorDir . '/drupal/core-composer-scaffold'),
@@ -56,8 +58,11 @@ return array(
     'Drupal\\Component\\' => array($baseDir . '/core/lib/Drupal/Component'),
     'Doctrine\\Deprecations\\' => array($vendorDir . '/doctrine/deprecations/src'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/src'),
+    'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/src'),
     'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
+    'CommerceGuys\\Intl\\' => array($vendorDir . '/commerceguys/intl/src'),
+    'CommerceGuys\\Addressing\\' => array($vendorDir . '/commerceguys/addressing/src'),
     'Asm89\\Stack\\' => array($vendorDir . '/asm89/stack-cors/src'),
 );
