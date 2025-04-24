@@ -1,29 +1,42 @@
-# Ignore core and vendor (managed by Composer)
-# Ignore Drupal file directories
-sites/*/files/
-sites/*/private/
-sites/*/libraries/
-
-# Ignore custom modules/themes temp files
-**/*.log
-**/*.tmp
-**/*~
-**/.DS_Store
-
-# Ignore node_modules if you're using npm/yarn
+# Ignore core Drupal files that are not needed
+/core
+/vendor/
 node_modules/
 
-# Ignore environment config files
-.env
-.env.local
-.env.*
+# Ignore Composer files that are not needed in Git
+/composer.lock
+/phpunit.xml
+/phpcs.xml
 
-# Ignore IDE/editor folders
+# Ignore config files specific to your environment
+/sites/*/settings.local.php
+/sites/*/services.local.yml
+
+# Ignore private files directory
+/sites/*/files/private
+
+# Ignore public files if you don’t want to version them (optional)
+/sites/*/files
+
+# Ignore temporary files
+/tmp
+*.log
+*.cache
+*.swp
+*.DS_Store
+
+# IDE and OS junk
 .idea/
 .vscode/
+*.sublime*
+*.bak
+Thumbs.db
+ehthumbs.db
 
-# Ignore composer lock if you want fresh installs (optional)
-# composer.lock
-
-# Ignore deployment config if needed
-.cpanel/*
+# Drupal scaffold files (if using drupal-composer/drupal-project)
+web/core/
+web/vendor/
+web/sites/*/settings.local.php
+web/sites/*/services.local.yml
+web/sites/*/files/private
+web/sites/*/files
