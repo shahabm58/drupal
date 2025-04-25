@@ -2,6 +2,8 @@
 /core
 /vendor/
 /libraries/
+/modules/contrib/
+/sites
 node_modules/
 
 # Ignore Composer files that are not needed in Git
