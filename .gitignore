@@ -1,6 +1,7 @@
 # Ignore core Drupal files that are not needed
 /core
 /vendor/
+/libraries/
 node_modules/
 
 # Ignore Composer files that are not needed in Git
