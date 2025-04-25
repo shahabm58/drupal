@@ -1,0 +1,23 @@
+name: Deploy to main cPanel
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull latest changes
+        run: |
+          curl -sS -H "Authorization: cpanel ${{ secrets.CPANEL_USERNAME }}:${{ secrets.CPANEL_API_TOKEN }}" \
+            "https://${{ secrets.CPANEL_DOMAIN }}:2083/execute/VersionControl/update?repository=${{ secrets.REPO_MAIN_NAME }}&repository_root=${{ secrets.REPO_MAIN_ROOT }}&branch=${{ secrets.BRANCH_MAIN }}&force=1"
+
+      - name: Trigger deployment
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: cpanel ${{ secrets.CPANEL_USERNAME }}:${{ secrets.CPANEL_API_TOKEN }}" \
+            --data-urlencode "repository=${{ secrets.REPO_MAIN_NAME }}" \
+            --data-urlencode "repository_root=${{ secrets.REPO_MAIN_ROOT }}" \
+            --data-urlencode "branch=${{ secrets.BRANCH_MAIN }}" \
+            "https://${{ secrets.CPANEL_DOMAIN }}:2083/execute/VersionControlDeployment/create"
