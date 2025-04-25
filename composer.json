@@ -25,7 +25,8 @@
         "drupal/gtranslate": "^3.0",
         "drupal/pathauto": "^1.13",
         "drupal/redirect": "^1.11",
-        "drupal/token": "^1.15"
+        "drupal/token": "^1.15",
+        "drupal/webform": "^6.2"
     },
     "conflict": {
         "drupal/drupal": "*"
