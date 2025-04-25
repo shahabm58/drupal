@@ -3,4 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home2/rapvofmy/dev.facefitcoach.app/
     - cd $DEPLOYPATH && /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader
-
